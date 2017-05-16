@@ -22,7 +22,7 @@ input,select{vertical-align:middle}
 }
 
 body {
-	font-family: arial,sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .container-fluid {
@@ -34,6 +34,7 @@ body {
 	width: 632px;
 	margin-left: 130px;
 	margin-right: 254px;
+	display: inline-block;
 }
 
 .row {
@@ -49,8 +50,13 @@ body {
 
 input[type="search"] {
 	height: 40px;
-	width: 100%;
-
+    width: 100%;
+    background: url(../images/mic.png) 90% 6px / 18px 23px no-repeat, url(../images/search.png) 97% 6px / 18px 23px no-repeat #fff;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 }
 
 .google-search {
@@ -242,6 +248,30 @@ footer li {
 	margin-right: 27px;
 }
 
+footer a {
+	text-decoration: none;
+	color: #777; 
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #333; 
+}
+
 .foot-wrapper {
 	margin-left: 180px;
+}
+
+.apps,
+.notify,
+.profile {
+	float: right;
+}
+
+.profile img {
+	border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
